@@ -1,0 +1,38 @@
+$font-familyMain: "Poppins", sans-serif;
+$font-familyArizona: "Arizonia", cursive;
+$font-sizeMain: 16px;
+$font-sizeTitleH1: 55px;
+$font-sizeTitleHeaderLink: 16px;
+$font-sizeTitleH2: 40px;
+$font-sizeTitleH3: 30px;
+$font-sizeTitleCard: 24px;
+
+$mainColor: rgb(241, 93, 48);
+$middleColor: #999999;
+$lightColor: white;
+$darkColor: black;
+
+
+@keyframes pulse-orange {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 121, 63, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(255, 121, 63, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
+  }
+}
+
+
+
+
+
+
+

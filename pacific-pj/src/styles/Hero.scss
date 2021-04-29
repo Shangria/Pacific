@@ -1,0 +1,47 @@
+@import "./variables";
+
+.hero{
+  position: inherit;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url("../images/hero_home.jpg") center center no-repeat fixed;
+  display: flex;
+  align-items: center;
+
+  &__wrapper{
+    display: flex;
+    color: $lightColor;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title-container{
+    flex-basis: 70%;
+  }
+  &__min-title{
+    font-size: $font-sizeTitleH3;
+    color: $mainColor;
+    font-family: $font-familyArizona;
+  }
+  &__title{
+    font-size: $font-sizeTitleH1;
+    font-weight: 700;
+  }
+  &__text{
+    font-weight: 400;
+    font-size: $font-sizeMain;
+  }
+
+
+  &__video{
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    animation: pulse-orange 2s infinite;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

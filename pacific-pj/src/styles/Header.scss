@@ -1,0 +1,40 @@
+@import "./variables";
+
+.header{
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  padding: 20px 0;
+
+  &__container{
+    line-height: 1.2;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__links{
+    color: $lightColor;
+    font-size: $font-sizeTitleHeaderLink;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  &__link{
+    padding: 24px 20px;
+    cursor: pointer;
+  }
+  &__logo{
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo-title{
+    font-weight: 700;
+    font-size: $font-sizeTitleCard;
+    color: $lightColor;
+  }
+  &__logo-min-title{
+    color: $mainColor;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
