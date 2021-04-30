@@ -1,5 +1,6 @@
 import { BiSearch } from "react-icons/bi";
 import { BiCalendar } from "react-icons/bi";
+import {Dropdown} from "./Dropdown";
 
 
 export const TabsData = [
@@ -24,7 +25,7 @@ export const TabsData = [
             },
             {
                 titleContent: 'Price Limit',
-                select: '',
+                select:<Dropdown/>,
             },
         ]
     },
@@ -36,21 +37,21 @@ export const TabsData = [
             {
                 titleContent: 'Destination',
                 placeholder: 'Search place',
-                icon: '',
+                icon: <BiSearch/>,
             },
             {
                 titleContent: 'Check-in date',
                 placeholder: 'Check In Date',
-                icon: '',
+                icon: <BiCalendar/>,
             },
             {
                 titleContent: 'Check-out date',
                 placeholder: 'Check Out Date',
-                icon: '',
+                icon: <BiCalendar/>,
             },
             {
                 titleContent: 'Price Limit',
-                select: '',
+                select:<Dropdown/>,
             },
         ]
     },

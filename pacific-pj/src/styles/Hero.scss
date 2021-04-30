@@ -65,7 +65,8 @@
     background-color: $mainColor;
     cursor: pointer;
   }
-  .active{
+
+  .active {
     background-color: $lightColor;
     color: $middleColor;
   }
@@ -86,7 +87,8 @@
     position: absolute;
     top: 100%;
     padding: 0;
-    :nth-last-child(-n+2){
+
+    :nth-last-child(-n+2) {
       border: none;
     }
   }
@@ -95,6 +97,7 @@
     padding: 24px;
     border-right: 1px solid $middleLightColor;
     font-size: $font-sizeMain;
+
     &:last-of-type {
       background-color: $mainColor;
       border: none;
@@ -110,20 +113,76 @@
     text-transform: uppercase;
     padding-bottom: 10px;
   }
-  &__item-search{
+
+  &__item-search {
     font-size: $font-sizeMain;
     color: $lightColor;
     font-weight: 700;
     text-transform: uppercase;
     padding: 10px 40px;
   }
-  &__icon{
+
+  &__icon {
     display: flex;
+    align-items: center;
   }
-  &__icon-item{
+
+  &__icon-item {
     color: $middleLightColor;
   }
+
+  &__dropdown {
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &__dropdown-header {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  &__dropdown-body {
+    padding: 5px;
+    border-top: 1px solid #E5E8EC;
+    display: none;
+  }
+
+  &__dropdown-body.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    bottom: 0;
+  }
+
+  &__dropdown-item {
+    padding: 10px;
+  }
+
+  &__dropdown-item:hover {
+    cursor: pointer;
+  }
+
+  &__dropdown-item-dot {
+    opacity: 0;
+    color: #91A5BE;
+    transition: all .2s ease-in-out;
+  }
+
+  &__dropdown-item-dot.selected {
+    opacity: 1;
+  }
+
 }
-.tab button.active {
-  background-color: #ccc;
-}
+
