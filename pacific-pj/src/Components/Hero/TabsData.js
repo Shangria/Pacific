@@ -9,21 +9,25 @@ export const TabsData = [
         title: 'Search Tour',
         content: [
             {
+                id:0,
                 titleContent: 'Destination',
                 placeholder: 'Search place',
                 icon: <BiSearch/>,
             },
             {
+                id:1,
                 titleContent: 'Check-in date',
                 placeholder: 'Check In Date',
                 icon: <BiCalendar/>,
             },
             {
+                id:2,
                 titleContent: 'Check-out date',
                 placeholder: 'Check Out Date',
                 icon: <BiCalendar/>,
             },
             {
+                id:3,
                 titleContent: 'Price Limit',
                 select:<Dropdown/>,
             },
