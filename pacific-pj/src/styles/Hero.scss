@@ -1,6 +1,6 @@
 @import "./variables";
 
-.hero{
+.hero {
   position: inherit;
   top: 0;
   width: 100%;
@@ -10,38 +10,120 @@
   display: flex;
   align-items: center;
 
-  &__wrapper{
+  &__wrapper {
     display: flex;
     color: $lightColor;
     justify-content: space-between;
     align-items: center;
   }
-  &__title-container{
+
+  &__title-container {
     flex-basis: 70%;
   }
-  &__min-title{
+
+  &__min-title {
     font-size: $font-sizeTitleH3;
     color: $mainColor;
     font-family: $font-familyArizona;
   }
-  &__title{
+
+  &__title {
     font-size: $font-sizeTitleH1;
     font-weight: 700;
   }
-  &__text{
+
+  &__text {
     font-weight: 400;
     font-size: $font-sizeMain;
   }
 
-
-  &__video{
-    width: 100px;
-    height: 100px;
+  &__video {
+    width: 90px;
+    height: 90px;
     background: #fff;
     animation: pulse-orange 2s infinite;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
+
+  &__tab {
+    width: 20%;
+    display: flex;
+    position: relative;
+    padding: 0;
+
+    :first-child {
+      margin: 0;
+    }
+  }
+
+  &__tab-links {
+    margin: 0 10px;
+    background-color: $mainColor;
+    cursor: pointer;
+  }
+  .active{
+    background-color: $lightColor;
+    color: $middleColor;
+  }
+
+  &__tab-links {
+    display: inline-block;
+    color: $lightColor;
+    font-size: $font-sizeMain;
+    font-weight: 700;
+    padding: 10px 30px;
+    white-space: nowrap;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__tab-content-items {
+    display: flex;
+    background-color: $lightColor;
+    position: absolute;
+    top: 100%;
+    padding: 0;
+    :nth-last-child(-n+2){
+      border: none;
+    }
+  }
+
+  &__tab-item {
+    padding: 24px;
+    border-right: 1px solid $middleLightColor;
+    font-size: $font-sizeMain;
+    &:last-of-type {
+      background-color: $mainColor;
+      border: none;
+      display: flex;
+      cursor: pointer;
+    }
+  }
+
+  &__tab-title {
+    font-weight: 700;
+    font-size: $font-sizeMin;
+    color: $mainColor;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  &__item-search{
+    font-size: $font-sizeMain;
+    color: $lightColor;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 40px;
+  }
+  &__icon{
+    display: flex;
+  }
+  &__icon-item{
+    color: $middleLightColor;
+  }
+}
+.tab button.active {
+  background-color: #ccc;
 }

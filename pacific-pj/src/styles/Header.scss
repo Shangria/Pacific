@@ -25,6 +25,7 @@
   &__logo{
     display: flex;
     flex-direction: column;
+    cursor: pointer;
   }
   &__logo-title{
     font-weight: 700;

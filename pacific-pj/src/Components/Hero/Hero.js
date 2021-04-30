@@ -1,6 +1,10 @@
 import React from "react";
 import {Container} from "react-bootstrap";
 import { BsFillCaretRightFill } from "react-icons/bs";
+import { TabsComponent } from './TabsComponent';
+import {TabsData} from "./TabsData";
+
+
 
 const Hero = () => {
     return (
@@ -19,6 +23,7 @@ const Hero = () => {
                            </a>
                        </div>
                     </div>
+                    <TabsComponent TabsData={TabsData}/>
                 </Container>
             </section>
         </>
