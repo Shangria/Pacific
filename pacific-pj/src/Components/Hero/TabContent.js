@@ -7,15 +7,16 @@ export const TabContent = ({content}) => {
     const [showCalendar, setShowCalendar] = useState(false);
     const [calendarItem, setCalendarItem] = useState(null);
 
-    const handleClickCalendar = () => {
+    const handleClickCalendar = (e) => {
         setShowCalendar(!showCalendar);
-        console.log(showCalendar)
+        console.log(showCalendar,  e.currentTarget.id)
     };
 
     return (
         <>
             {
                 content.map((val, i) => {
+
                     console.log(val.id, i)
                     return (
                         <li key={i} className='hero__tab-item'>
@@ -28,7 +29,7 @@ export const TabContent = ({content}) => {
                                         <>
                                             <span className="hero__icon-item">{val.icon}
                                             </span>
-                                            {showCalendar && i === val.id ? <Calendar/> : ''}
+                                            {showCalendar && i === val.id ?'' : ''}
                                             <input type="search" placeholder={val.placeholder}
                                                    onClick={handleClickCalendar}/>
                                         </>
