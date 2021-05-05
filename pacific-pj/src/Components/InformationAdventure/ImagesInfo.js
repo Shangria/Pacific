@@ -1,9 +1,9 @@
 import ImageCard from '../InformationAdventure/ImageCadr';
 
-const ImagesInfo = ({data}) => {
+const ImagesInfo = ({dataImg}) => {
     return (
-        <ul className="inform-adventure__imagesCards">
-            {data.map((li, index)=>{
+        <ul className="inform-adventure__images-cards">
+            {dataImg.map((li, index)=>{
                 return(
                     <ImageCard key={index} li={li}/>
                     )

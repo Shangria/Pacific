@@ -1,8 +1,8 @@
-const Info = ({data}) => {
+const Info = ({dataInfo}) => {
     return (
         <div className="inform-adventure__article">
             {
-                data.map(value => {
+                dataInfo.map(value => {
                     return (
                         <>
                             <h4 className="inform-adventure__article-min-title">{value.titleInfo}</h4>

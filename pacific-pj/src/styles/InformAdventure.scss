@@ -1,3 +1,5 @@
+@import "./variables";
+
 .inform-adventure {
   padding: 112px;
 
@@ -6,7 +8,33 @@
     flex-wrap: nowrap;
   }
 
-  &__imagesCards {
+  &__images-cards {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__image-card {
+    flex-basis: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    width: 650px;
+    height: 345px;
+  }
+  &__icon-wrap{
+    background-color: $mainColor;
+    width: 120px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 25px;
+    left: -7px;
+  }
+  &__icon{
+    filter: invert(1);
+    padding: 15px;
   }
 }
