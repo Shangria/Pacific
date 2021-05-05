@@ -1,8 +1,9 @@
 import React from "react";
 import NavItem from "./NavItem";
 import { Container } from "react-bootstrap";
+import { HeaderData } from "../Header/HeaderData";
 
-const Header = ({HeaderData}) => {
+const Header = () => {
     return (
         <header className='header'>
             <Container>

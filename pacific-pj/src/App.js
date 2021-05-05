@@ -1,14 +1,15 @@
+import './styles/App.scss';
 import Header from './Components/Header/Header';
 import Hero from './Components/Hero/Hero';
-import './styles/App.scss';
-import { HeaderData } from "../src/Components/Header/HeaderData";
+import InformationAdventure  from "../src/Components/InformationAdventure/InformationAdventure";
 
 function App() {
 
   return (
     <>
-        <Header HeaderData={HeaderData}/>
+        <Header/>
         <Hero/>
+        <InformationAdventure/>
       </>
   );
 }

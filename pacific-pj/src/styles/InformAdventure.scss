@@ -1,0 +1,12 @@
+.inform-adventure {
+  padding: 112px;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &__imagesCards {
+    display: flex;
+  }
+}
