@@ -28,14 +28,25 @@
     width: 30%;
   }
 
+  .glide {
+    margin-left: 245px;
+  }
+
   .glide__slide {
     height: 320px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     color: $lightColor;
+    position: relative;
+    border-radius: 5px;
   }
-  .glide__bullets{
+
+  .glide__slides {
+    padding-top: 10px;
+  }
+
+  .glide__bullets {
     display: flex;
     justify-content: center;
   }
@@ -45,17 +56,68 @@
     height: 15px;
     border: 1px #b0acac solid;
     background-color: $middleColor;
-    margin-right:10px;
+    margin-right: 10px;
 
-    &.active{
+    &.active {
       background-color: $mainColor;
     }
   }
-  &__slide-title{
+
+  &__slide-title {
     font-size: 18px;
     font-weight: 500;
-    width: 100px;
-    height: 100px;
-    background-color:$mainColor ;
+    width: 110px;
+    height: 35px;
+    background-color: $mainColor;
+    position: relative;
+    top: 7px;
+    left: 70px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    p::before {
+      position: absolute;
+      width: 0;
+      right: -8px;
+      height: 0;
+      border-style: solid;
+      border-width: 8px 0 0 8px;
+      border-color: transparent transparent transparent $mainColor;
+    }
+    &::after{
+      position: absolute;
+      top: -5px;
+      left: 90px;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 5px 0 0 5px;
+      border-color: transparent transparent transparent $mainColor;
+    }
+  }
+  &__slide-quantity{
+    width: 95px;
+    position: absolute;
+    bottom: 20px;
+    right: -5px;
+    height: 30px;
+    border-radius: 20px 0 0 20px;
+    background-color: $mainColor;
+    padding-left: 35px;
+    padding-top: 3px;
+
+    &::after{
+      position: absolute;
+      top: -5px;
+      left: 90px;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 5px 0 0 5px;
+      border-color: transparent transparent transparent $mainColor;
+    }
   }
 }
