@@ -31,7 +31,36 @@ $darkColor: black;
     box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
   }
 }
-
+.backgroundColor{
+  content: '';
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.min-title{
+  font-size: $font-sizeTitleH3;
+  color: $mainColor;
+  font-family: $font-familyArizona;
+  padding-bottom: 10px;
+}
+.mainTitle{
+  font-size: $font-sizeTitleH2;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.middleColorText{
+  color: $middleColor;
+  line-height: 1.8;
+}
+.btn{
+  background: $mainColor ;
+  border: 1px solid $mainColor ;
+  color: $lightColor ;
+  padding: 15px 20px;
+  border-radius: 3px;
+}
 
 
 

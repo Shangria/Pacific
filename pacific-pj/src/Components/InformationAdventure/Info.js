@@ -6,14 +6,14 @@ const Info = ({dataInfo}) => {
                     return (
                         <>
                             <h4 className="inform-adventure__article-min-title">{value.titleInfo}</h4>
-                            <h3 className="inform-adventure__article-title">{value.bgTitle}</h3>
+                            <h2 className="inform-adventure__article-title">{value.bgTitle}</h2>
                             <p className="inform-adventure__article-text">{value.pInfo1}</p>
                             <p className="inform-adventure__article-text">{value.pInfo2}</p>
                         </>
                     )
                 })
             }
-            <button className="inform-adventure__article-btn"></button>
+            <button className="inform-adventure__article-btn">Search Destination</button>
         </div>
     )
 };

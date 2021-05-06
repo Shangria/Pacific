@@ -1,7 +1,7 @@
 @import "./variables";
 
 .inform-adventure {
-  padding: 112px;
+  padding-top: 200px;
 
   &__wrapper {
     display: flex;
@@ -11,17 +11,34 @@
   &__images-cards {
     display: flex;
     flex-wrap: wrap;
+    li:nth-child(1)::after{
+      @extend .backgroundColor;
+      background-color: #1089FF;
+    }
+    li:nth-child(2)::after{
+      @extend .backgroundColor;
+      background-color: #048998;
+    }
+    li:nth-child(3)::after{
+      @extend .backgroundColor;
+      background-color: #00a8b5;
+    }
+    li:nth-child(4)::after{
+      @extend .backgroundColor;
+      background-color: #ff5959;
+    }
   }
 
   &__image-card {
-    flex-basis: 40%;
+    flex-basis: 43%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     margin-right: 35px;
     margin-bottom: 35px;
-    width: 650px;
-    height: 345px;
+    height: 321px;
+    position: relative;
+    color: $lightColor;
   }
   &__icon-wrap{
     background-color: $mainColor;
@@ -31,10 +48,57 @@
     justify-content: center;
     position: relative;
     top: 25px;
-    left: -7px;
+    left: -4px;
+    z-index: 1;
+
+    &::after{
+      position: absolute;
+      top: -5px;
+      left: 0;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 5px 5px;
+      border-color: transparent transparent $mainColor transparent;
+    }
   }
   &__icon{
     filter: invert(1);
     padding: 15px;
+  }
+  &__card-title{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__card-text{
+    font-size: $font-sizeMain;
+    font-weight: 400;
+  }
+
+  &__text-wrapper{
+    display: flex;
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 45px;
+  }
+  &__article{
+    padding-top: 70px;
+    padding-left: 10px;
+  }
+  &__article-min-title{
+    @extend .min-title;
+  }
+  &__article-title{
+    @extend .mainTitle;
+  }
+  &__article-text{
+   @extend .middleColorText;
+  }
+  &__article-btn{
+    @extend .btn;
   }
 }

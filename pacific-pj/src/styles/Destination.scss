@@ -1,0 +1,26 @@
+@import "./variables";
+
+.destination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 900px;
+  height: 100vh;
+
+  &__title-wrap {
+    text-align: center;
+  }
+
+  &__min-title {
+    @extend .min-title;
+  }
+
+  &__title {
+    @extend .mainTitle;
+  }
+  &__slider-item{
+    width: 30%;
+  }
+}

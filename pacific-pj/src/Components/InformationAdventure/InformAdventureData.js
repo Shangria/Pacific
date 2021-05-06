@@ -15,7 +15,6 @@ export const AdventureData = [
             'their place and supplies it with the necessary',
         icon: iconParagliding,
         alt: 'iconParagliding',
-        color: '#1089ff',
     },
     {
         img: services2,
@@ -24,7 +23,6 @@ export const AdventureData = [
             ' their place and supplies it with the necessary',
         icon: iconDestination,
         alt: 'iconDestination',
-        color: '#048998',
     },
     {
         img: services3,
@@ -33,7 +31,6 @@ export const AdventureData = [
             'their place and supplies it with the necessary',
         icon: iconGuide,
         alt: 'iconGuide',
-        color: '#00a8b5',
     },
     {
         img: services4,
@@ -42,7 +39,6 @@ export const AdventureData = [
             'their place and supplies it with the necessary',
         icon: iconMap,
         alt: 'iconMap',
-        color: '#ff5959',
     },
 ];
 
