@@ -1,4 +1,5 @@
 @import "./variables";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 
 .destination {
   display: flex;
@@ -7,7 +8,9 @@
   background-position: left bottom;
   background-repeat: repeat-x;
   background-size: 900px;
-  height: 100vh;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
 
   &__title-wrap {
     text-align: center;
@@ -20,7 +23,39 @@
   &__title {
     @extend .mainTitle;
   }
-  &__slider-item{
+
+  &__slider-item {
     width: 30%;
+  }
+
+  .glide__slide {
+    height: 320px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: $lightColor;
+  }
+  .glide__bullets{
+    display: flex;
+    justify-content: center;
+  }
+
+  .glide__bullet {
+    border-radius: 50%;
+    height: 15px;
+    border: 1px #b0acac solid;
+    background-color: $middleColor;
+    margin-right:10px;
+
+    &.active{
+      background-color: $mainColor;
+    }
+  }
+  &__slide-title{
+    font-size: 18px;
+    font-weight: 500;
+    width: 100px;
+    height: 100px;
+    background-color:$mainColor ;
   }
 }
