@@ -29,7 +29,7 @@
   }
 
   .glide {
-    margin-left: 245px;
+    margin-left: 215px;
   }
 
   .glide__slide {
@@ -40,6 +40,19 @@
     color: $lightColor;
     position: relative;
     border-radius: 5px;
+    margin-left: 4px!important;
+
+    &::after{
+      position: absolute;
+      bottom: 50px;
+      right: -5px;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 5px 0 0 5px;
+      border-color: transparent transparent transparent $mainColor;
+    }
   }
 
   .glide__slides {
@@ -76,16 +89,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
 
-    p::before {
-      position: absolute;
-      width: 0;
-      right: -8px;
-      height: 0;
-      border-style: solid;
-      border-width: 8px 0 0 8px;
-      border-color: transparent transparent transparent $mainColor;
-    }
-    &::after{
+    p::after{
       position: absolute;
       top: -5px;
       left: 90px;
@@ -94,6 +98,16 @@
       height: 0;
       border-style: solid;
       border-width: 5px 0 0 5px;
+      border-color: transparent transparent transparent $mainColor;
+    }
+
+    p::before {
+      position: absolute;
+      width: 0;
+      right: -8px;
+      height: 0;
+      border-style: solid;
+      border-width: 8px 0 0 8px;
       border-color: transparent transparent transparent $mainColor;
     }
   }
@@ -107,17 +121,11 @@
     background-color: $mainColor;
     padding-left: 35px;
     padding-top: 3px;
+    transition: width .3s ease-in-out;
 
-    &::after{
-      position: absolute;
-      top: -5px;
-      left: 90px;
-      content: '';
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 5px 0 0 5px;
-      border-color: transparent transparent transparent $mainColor;
+    &:hover{
+      width: 105px;
     }
+
   }
 }
